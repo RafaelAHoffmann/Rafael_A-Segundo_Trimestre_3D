@@ -52,4 +52,12 @@ function mostraPergunta(){
     caixaPerguntas.textContent = perguntaAtual.enunciado
 }
 
+function mostraAlternativas(){
+    for(const alternativas of perguntaAtual.alternativas){
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
+}
+
 mostraPergunta();
