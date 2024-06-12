@@ -1,44 +1,74 @@
 const
-caixaPrincipal = document.querySelector(".caixa-principal"),
-caixaPerguntas = document.querySelector(".caixa-perguntas"),
+   caixaPrincipal = document.querySelector(".caixa-principal"),
+   caixaPerguntas = document.querySelector(".caixa-perguntas"),
 caixaAlternativas = document.querySelector(".caixa-alternativas"),
-caixaResultado = document.querySelector(".caixa-resultado"),
-textoResultado = document.querySelector(".texto-resultado"),
+   caixaResultado = document.querySelector(".caixa-resultado"),
+   textoResultado = document.querySelector(".texto-resultado"),
 
 perguntas = [
     {
-        enunciado:"Quando o império tibetano caiu?",
+        enunciado:"",
         alternativas: [
-            "840. d.C",
-            "480. d.C",
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            },
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            }
         ]
     },
     {
-        enunciado:"Quem matou Hitler?",
+        enunciado:"",
         alternativas: [
-            "Adolf",
-            "Meu avô",
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            },
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            }
         ]
     },
     {
-        enunciado:"Qual o motivo da fome em massa ukraniana, Holodomor?",
+        enunciado:"",
         alternativas: [
-            "Nunca aconteceu",
-            "Eles mereceram",
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            },
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            }
         ]
     },
     {
-        enunciado:"Kendrik ou Drake",
+        enunciado:"",
         alternativas: [
-            "Kendrik (correto)",
-            "Drake (errado)",
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            },
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            }
         ]
     },
     {
-        enunciado:"Complete a frase: 'Skibidi...' ",
+        enunciado:"",
         alternativas: [
-            "toilet.",
-            "dop dop yes yes",
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            },
+            {
+                texto: "",
+                afirmacao:"afirmação",
+            }
         ]
     },
 ];
@@ -47,12 +77,14 @@ let
 atual = 0,
 perguntaAtual;
 
-function mostraPergunta(){
+function
+mostraPergunta(){
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado
 }
 
-function mostraAlternativas(){
+function
+mostraAlternativas(){
     for(const alternativas of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa;
