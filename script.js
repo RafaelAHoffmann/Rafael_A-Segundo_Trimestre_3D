@@ -1,9 +1,12 @@
+let
+    historiaFinal;
+    
 const
-   caixaPrincipal = document.querySelector(".caixa-principal"),
-   caixaPerguntas = document.querySelector(".caixa-perguntas"),
-caixaAlternativas = document.querySelector(".caixa-alternativas"),
-   caixaResultado = document.querySelector(".caixa-resultado"),
-   textoResultado = document.querySelector(".texto-resultado"),
+    caixaPrincipal     =  document.querySelector(".caixa-principal"),
+    caixaPerguntas     =  document.querySelector(".caixa-perguntas"),
+    caixaAlternativas  =  document.querySelector(".caixa-alternativas"),
+    caixaResultado     =  document.querySelector(".caixa-resultado"),
+    textoResultado     =  document.querySelector(".texto-resultado"),
 
 perguntas = [
     {
@@ -93,3 +96,11 @@ mostraAlternativas(){
 }
 
 mostraPergunta();
+
+function respostaSelecionada(opcaoSelecionada)
+{
+    const afirmacoes = opcaoSelecionada.afirmacoes;
+    historiaFinal = afirmacoes;
+    atual++;
+    mostraPergunta
+}
