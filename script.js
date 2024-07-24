@@ -10,14 +10,14 @@ const
 
 perguntas = [
     {
-        enunciado:"",
+        enunciado:"1",
         alternativas: [
             {
-                texto: "",
+                texto: "a",
                 afirmacao:"afirmação",
             },
             {
-                texto: "",
+                texto: "b",
                 afirmacao:"afirmação",
             }
         ]
@@ -77,8 +77,8 @@ perguntas = [
 ];
 
 let
-atual = 0,
-perguntaAtual;
+    atual = 0,
+    perguntaAtual;
 
 function
 mostraPergunta(){
