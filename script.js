@@ -103,12 +103,21 @@ mostraAlternativas()
     }
 }
 
-mostraPergunta();
-
-function respostaSelecionada(opcaoSelecionada)
+function
+respostaSelecionada(opcaoSelecionada)
 {
     const afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
+
+function
+mostraResultado
+{
+    caixaPerguntas.textContent = "Esse texto é a introdução para juntar todas as afirmações das respostas...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
+mostraPergunta();
