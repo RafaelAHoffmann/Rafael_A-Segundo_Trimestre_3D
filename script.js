@@ -93,8 +93,10 @@ mostraPergunta()
 }
 
 function
-mostraAlternativas(){
-    for(const alternativas of perguntaAtual.alternativas){
+mostraAlternativas()
+{
+    for(const alternativas of perguntaAtual.alternativas)
+    {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa;
         caixaAlternativas.appendChild(botaoAlternativas);
@@ -105,8 +107,8 @@ mostraPergunta();
 
 function respostaSelecionada(opcaoSelecionada)
 {
-    const afirmacoes = opcaoSelecionada.afirmacoes;
-    historiaFinal = afirmacoes;
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
     atual++;
-    mostraPergunta
+    mostraPergunta();
 }
