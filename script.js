@@ -1,6 +1,3 @@
-let
-    historiaFinal;
-    
 const
     caixaPrincipal     =  document.querySelector(".caixa-principal"),
     caixaPerguntas     =  document.querySelector(".caixa-perguntas"),
@@ -78,12 +75,21 @@ perguntas = [
 
 let
     atual = 0,
-    perguntaAtual;
+    perguntaAtual,
+    historiaFinal = "";
 
 function
-mostraPergunta(){
+mostraPergunta()
+{
+    if(atual >= perguntas.length)
+    {
+        mostraResultado();
+        return;
+    }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado
+    caixaAlternativas.textContent = "";
+    mostraAlternativas();
 }
 
 function
