@@ -99,6 +99,7 @@ mostraAlternativas()
     {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa;
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
