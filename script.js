@@ -114,7 +114,7 @@ respostaSelecionada(opcaoSelecionada)
 }
 
 function
-mostraResultado
+mostraResultado()
 {
     caixaPerguntas.textContent = "Esse texto é a introdução para juntar todas as afirmações das respostas...";
     textoResultado.textContent = historiaFinal;
